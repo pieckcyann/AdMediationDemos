@@ -1,0 +1,54 @@
+[versions]
+agp = "8.10.1"
+applovinSdk = "13.3.0"
+applovinSdkVersion = "13.0.1"
+bidmachineAdapter = "3.1.1.0"
+bigoadsAdapter = "5.1.0.0"
+bytedanceAdapter = "7.2.0.3.0"
+chartboostAdapter = "9.8.1.0"
+fyberAdapter = "8.3.5.0"
+inmobiAdapter = "10.7.8.0"
+ironsourceAdapter = "8.9.0.0.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.1"
+lifecycleProcess = "2.9.1"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+mintegralAdapter = "16.9.71.0"
+molocoAdapter = "3.4.0.0"
+playServicesBase = "18.7.0"
+unityadsAdapter = "4.15.0.0"
+verveAdapter = "3.3.0.0"
+vungleAdapter = "7.4.2.0"
+
+[libraries]
+applovin-sdk = { module = "com.applovin:applovin-sdk", version.ref = "applovinSdk" }
+applovin-sdk-v1301 = { module = "com.applovin:applovin-sdk", version.ref = "applovinSdkVersion" }
+bidmachine-adapter = { module = "com.applovin.mediation:bidmachine-adapter", version.ref = "bidmachineAdapter" }
+bigoads-adapter = { module = "com.applovin.mediation:bigoads-adapter", version.ref = "bigoadsAdapter" }
+bytedance-adapter = { module = "com.applovin.mediation:bytedance-adapter", version.ref = "bytedanceAdapter" }
+chartboost-adapter = { module = "com.applovin.mediation:chartboost-adapter", version.ref = "chartboostAdapter" }
+fyber-adapter = { module = "com.applovin.mediation:fyber-adapter", version.ref = "fyberAdapter" }
+inmobi-adapter = { module = "com.applovin.mediation:inmobi-adapter", version.ref = "inmobiAdapter" }
+ironsource-adapter = { module = "com.applovin.mediation:ironsource-adapter", version.ref = "ironsourceAdapter" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+lifecycle-process = { module = "androidx.lifecycle:lifecycle-process", version.ref = "lifecycleProcess" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+mintegral-adapter = { module = "com.applovin.mediation:mintegral-adapter", version.ref = "mintegralAdapter" }
+moloco-adapter = { module = "com.applovin.mediation:moloco-adapter", version.ref = "molocoAdapter" }
+play-services-base = { module = "com.google.android.gms:play-services-base", version.ref = "playServicesBase" }
+unityads-adapter = { module = "com.applovin.mediation:unityads-adapter", version.ref = "unityadsAdapter" }
+verve-adapter = { module = "com.applovin.mediation:verve-adapter", version.ref = "verveAdapter" }
+vungle-adapter = { module = "com.applovin.mediation:vungle-adapter", version.ref = "vungleAdapter" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

@@ -1,0 +1,63 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.xiaoyou.admediationdemos'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.xiaoyou.admediationdemos"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+
+    // MAX
+    implementation libs.applovin.sdk
+
+    // Listen for App Foregrounding Events
+    implementation libs.lifecycle.process
+
+    // MAX splash:
+    implementation libs.applovin.sdk.v1301
+    implementation libs.play.services.base
+    // implementation 'com.applovin.mediation:google-adapter:23.6.0.0'
+    implementation libs.bidmachine.adapter
+    implementation libs.bigoads.adapter
+    implementation libs.chartboost.adapter
+    implementation libs.fyber.adapter
+    implementation libs.inmobi.adapter
+    implementation libs.ironsource.adapter
+    implementation libs.moloco.adapter
+    implementation libs.mintegral.adapter
+    implementation libs.bytedance.adapter
+    implementation libs.unityads.adapter
+    implementation libs.vungle.adapter
+    implementation libs.verve.adapter
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}
