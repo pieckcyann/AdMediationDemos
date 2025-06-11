@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AdMediationDemos</string>
+    <string name="activity_interstitial">Interstitials</string>
 </resources>

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdMediationDemos"
         tools:targetApi="31">
+        <!-- AppLovin -->
+        <meta-data android:name="applovin.sdk.key"
+            android:value="9uHgeBwag3NXva9MC23ToO3q11Ve59bF1uwg4qGltdGmCQ7OSByFZ_3b1ZF7krMlkHQo5gXzIokVDsvg1rwbr-"/>
+        <!-- Google AdMob SDK -->
+        <!--<meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="«your-admob-app-id»"/>-->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -20,7 +29,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity android:name=".ads.max.InterstitialAdActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName="com.xiaoyou.admediationdemos.MainActivity"/>
     </application>
 
 </manifest>

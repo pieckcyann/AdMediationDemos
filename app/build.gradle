@@ -7,7 +7,7 @@ android {
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.xiaoyou.admediationdemos"
+        applicationId "com.mahjong.solitaire.tile.pair.match"  // ← 改成你后台绑定的包名
         minSdk 24
         targetSdk 35
         versionCode 1
@@ -31,27 +31,32 @@ android {
 dependencies {
 
     // MAX
-    implementation libs.applovin.sdk
+    // implementation libs.applovin.sdk.v1301
+    implementation 'com.applovin:applovin-sdk:+'
 
     // Listen for App Foregrounding Events
     implementation libs.lifecycle.process
 
-    // MAX splash:
-    implementation libs.applovin.sdk.v1301
-    implementation libs.play.services.base
-    // implementation 'com.applovin.mediation:google-adapter:23.6.0.0'
-    implementation libs.bidmachine.adapter
-    implementation libs.bigoads.adapter
-    implementation libs.chartboost.adapter
-    implementation libs.fyber.adapter
-    implementation libs.inmobi.adapter
-    implementation libs.ironsource.adapter
-    implementation libs.moloco.adapter
-    implementation libs.mintegral.adapter
-    implementation libs.bytedance.adapter
-    implementation libs.unityads.adapter
-    implementation libs.vungle.adapter
-    implementation libs.verve.adapter
+    // // MAX splash:
+    // implementation libs.applovin.sdk.v1301
+    // implementation libs.play.services.base
+    // // implementation 'com.applovin.mediation:google-adapter:23.6.0.0'
+    // implementation libs.bidmachine.adapter
+    // implementation libs.bigoads.adapter
+    // implementation libs.chartboost.adapter
+    // implementation libs.fyber.adapter
+    // implementation libs.inmobi.adapter
+    // implementation libs.ironsource.adapter
+    // implementation libs.moloco.adapter
+    // implementation libs.mintegral.adapter
+    // implementation libs.bytedance.adapter
+    // implementation libs.unityads.adapter
+    // implementation libs.vungle.adapter
+    // implementation libs.verve.adapter
+
+    // Google Ad Manager & Google Bidding and Google AdMob
+    // implementation 'com.applovin.mediation:google-ad-manager-adapter:+'
+    // implementation 'com.applovin.mediation:google-adapter:+'
 
     implementation libs.appcompat
     implementation libs.material
